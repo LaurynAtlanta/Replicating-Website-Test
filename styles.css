@@ -19,9 +19,12 @@ li,a, button {
     text-transform: uppercase;
 }
 
-h1, h2, h3 , h4, h5, p {
+h1, h2, h3 , h4, h5, p, label {
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
+}
+label{
+    text-transform: uppercase;
 }
 
 ul{
@@ -62,7 +65,7 @@ ul{
 }
 
 .background-container{
-    background: url(imgs/book.jpg) center center;
+    background: url(imgs/cooking.jpg) center center;
     background-size: cover;
     opacity: 0.5;
     height: 600px; 
@@ -72,17 +75,6 @@ ul{
 .intro-container{
     background-color:#F3EADB;
     height: 900px; 
-}
-
-.title, .title2{
-    z-index: 4;
-    color:white;
-    text-align: center;
-}
-
-.title2{
-    font-family: 'Dancing Script', cursive;
-    font-size: 4em;
 }
 
 button{
@@ -116,10 +108,11 @@ aside ul{
     background-color:white;
     width: 70%;
     height: 450px;
-    position: relative;
-    bottom: 300px;
+    position: absolute;
+    top: 300px;
     left: 300px;
     padding: 50px 50px 100px 500px;
+    z-index: 2;
 }
 
 .box-with-article p{
@@ -132,7 +125,7 @@ line-height: 1.6;
     font-size: 2em;
     color:#ECBE9B;
     font-family: 'Dancing Script', cursive;
-   }
+}
 
 .box-with-article button{
     margin: 10px 20px 20px;
@@ -157,4 +150,27 @@ line-height: 1.6;
     position: absolute;
     top: 260px;
     left: 170px;
+}
+
+.titleheader{
+    position: absolute;
+    top: 120px;
+    left: 37%;
+    z-index: 5;
+}
+
+.title, .title2{
+    z-index: 4;
+    color:white;
+    text-align: center;
+}
+
+.title2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.email{
+    display: inline-block;
+    padding: 200px 0px 50px 27%;
 }
