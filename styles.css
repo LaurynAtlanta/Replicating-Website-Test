@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 *{
     margin:0;
     Padding:0;
@@ -359,3 +360,107 @@ aside ul{
     margin-bottom: 3%;
 }
 /* end of footer */
+
+
+@media only screen and (max-width: 1200px){
+    .titleheader{
+        top: 120px;
+        left: 32%;
+    }
+
+    .featuredimg{
+        width: 440px;
+        height: 440px; 
+        top: 285px;
+        left: 120px;
+    }
+    
+    .featuredwhite{
+        background-color: white;
+        width: 500px;
+        height: 490px;
+        top: 260px;
+        left: 90px;
+    }
+
+    .box-with-article{
+        width: 60%;
+        height: 450px;
+        top: 300px;
+        left: 300px;
+        padding: 50px 50px 100px 310px;
+        z-index: 2;
+    }
+    .email{
+        display: inline-block;
+        padding: 200px 0px 50px 13%;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (max-width: 1048px){
+    .box-with-article{
+        width: 65%;
+        height: 450px;
+        top: 300px;
+        left: 300px;
+        padding: 20px 20px 100px 310px;
+        z-index: 2;
+    }
+    .email{
+        padding: 200px 0px 50px 9%;
+    }
+    .navlinks{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .email label{
+        padding-left: 75px;
+    }
+    .email{
+        margin-left: 150px;
+    }
+    .intro-container{
+        height: 920px; 
+    }
+}
+@media only screen and (max-width: 800px){
+    
+}
+
+@media only screen and (max-width: 600px){
+    .navlinks li{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        flex-flow: row;
+    }
+
+    .titleheader{
+        top: 120px;
+        left: 16%;
+    }
+
+    .featuredimg{
+        width: 440px;
+        height: 440px; 
+        top: 285px;
+        left: 70px;
+    }
+    
+    .featuredwhite{
+        background-color: white;
+        width: 500px;
+        height: 490px;
+        top: 260px;
+        left: 40px;
+    }
+
+}
