@@ -271,7 +271,7 @@ article p{
 
 main{
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: row;
 }
 
 article{
@@ -399,6 +399,15 @@ aside ul{
     footer p{
         font-size: 0.8em;
     }
+    article h6{
+        font-size: 0.8em;
+    }
+    article h3{
+        font-size: 1.2em;
+    }
+    article p{
+        font-size: 0.7em;
+    }
     
 }
 
@@ -419,28 +428,37 @@ aside ul{
     }
 }
 
-@media only screen and (max-width: 950px){
-    .email label{
-        padding-left: 75px;
+@media only screen and (max-width: 949px){
+    label{
+        font-size: 0.9em;
+        margin-right: 10px;
     }
+
     .email{
-        margin-left: 150px;
+        padding-left: 7%;
     }
-    .intro-container{
-        height: 920px; 
+
+    .summer-picnic, .artisian{
+        flex-flow: column wrap;
+        margin-top: 3%;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    aside .author{
+        width: 100%;
+        height: 300px; 
     }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 768px){
     
 }
 
 @media only screen and (max-width: 600px){
     .navlinks li{
         display: none;
-    }
-    main{
-        flex-direction: column;
-        flex-flow: row;
     }
 
     .titleheader{
@@ -463,4 +481,10 @@ aside ul{
         left: 40px;
     }
 
+}
+@media only screen and (max-width: 480px){
+    
+}
+@media only screen and (max-width: 320px){
+    
 }
